@@ -20,7 +20,7 @@ module Jasmine::Headless
         @registered_engines = {}
 
         # register haml-sprockets and handlebars_assets if it's available...
-        %w{haml-sprockets handlebars_assets}.each do |library|
+        %w{haml-sprockets handlebars_assets hogan_assets}.each do |library|
           begin
             require library
           rescue LoadError
